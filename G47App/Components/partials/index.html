@@ -1,0 +1,57 @@
+{% include 'partials/header.html'%}
+
+<main class="mt-5">
+  <!-- .wrapper -->
+  <div class="wrapper">
+    <!-- .page -->
+    <div class="page">
+      <!-- .page-inner -->
+      <div class="page-inner">
+        <!-- .page-title-bar -->
+        <header class="page-title-bar">
+          <p class="lead">
+            <span class="font-weight-bold">Hi, {{user.username}}</span>
+            <span class="d-block text-muted">Here’s what’s happening with your server today.</span>
+            <span class="d-block text-muted">{{backdoor}}</span>
+          </p>
+        </header>
+        <!-- /.page-title-bar -->
+        <!-- .page-section -->
+        <div class="page-section">
+          <!-- .section-block -->
+          <div class="section-block">
+            <!-- metric row -->
+            <div class="metric-row">
+              <!-- metric column -->
+              <div class="col-lg-3">
+                <!-- .metric -->
+                <a href="" class="metric metric-bordered text-center">
+                  <div class="metric-badge">
+                    <span class="badge badge-lg  badge-warning">
+                      <span class="oi oi-laptop  mr-1"></span>Remote Listener</span>
+                  </div>
+                </a>
+                <!-- /.metric -->
+              </div>
+              <div class="col-lg-3">
+                <!-- .metric -->
+                <a href="" class="metric metric-bordered text-center">
+                  <div class="metric-badge">
+                    <span class="badge badge-lg badge-success ">
+                      <span class="oi oi-globe  mr-1"></span>Remote IPs</span>
+                  </div>
+                </a>
+                <!-- /.metric -->
+              </div>
+            </div>
+            <!-- /metric row -->
+          </div>
+        </div>
+        <!-- /.page-section -->
+      </div>
+      <!-- /.page-inner -->
+    </div>
+    <!-- /.page -->
+  </div>
+  <!-- /.wrapper -->
+</main>
